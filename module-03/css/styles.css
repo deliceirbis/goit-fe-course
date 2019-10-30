@@ -1,0 +1,148 @@
+* {
+  /* outline:1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none; /*снимает маркеры у списков */
+}
+
+a {
+  text-decoration: none; /* снимает подчерквание у ссылок */
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+}
+
+body {
+  min-height: 100vh; /* высота body будет минимум по высоте вьюпорта*/
+  padding-bottom: 72px;
+}
+
+.header {
+  width: 901px;
+  padding-top: 78px;
+  padding-bottom: 104px;
+  padding-left: 162px;
+  padding-right: 162px;
+  margin: 0 auto;
+}
+
+.item-navigation {
+  display: inline-block;
+}
+
+.menu-navigation li:nth-child(1) {
+  margin-right: 120px;
+}
+.menu-navigation li:nth-child(2) {
+  margin-right: 100px;
+}
+.menu-navigation li:nth-child(3) {
+  margin-right: 91px;
+}
+
+.link-navigation {
+  text-transform: uppercase; /*заглавные буквы */
+}
+
+.item-navigation a {
+  color: rgb(98, 98, 98); /* Цвет текста ссылки*/
+  line-height: 24px;
+  display: inline-block;
+}
+
+.menu-navigation a:hover {
+  color: #03a9f4;
+}
+
+.section-lifestyle {
+  width: 901px;
+  margin: 0 auto;
+  margin-bottom: 132px;
+}
+
+.lifestyle-item {
+  display: inline-block;
+  width: 420px;
+  margin-right: 58px;
+}
+
+.lifestyle-item-last {
+  margin-right: -4px;
+}
+
+/*делает img inline-block и устанавливает размер */
+.image-item {
+  display: inline-block;
+  width: 420px;
+  height: 280px;
+  margin-bottom: 26px;
+}
+
+.category-section {
+  font-family: "Ubuntu", sans-serif;
+  color: #b4ad9e;
+  text-transform: uppercase;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 34px;
+  padding: 0;
+}
+
+.section-last {
+  margin-bottom: 50px;
+}
+
+.button {
+  width: 901px;
+  margin: 0 auto;
+}
+.button-load {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: #626262;
+  display: block;
+  width: 164px;
+  height: 62px;
+  line-height: 24px;
+  border-width: 2px;
+  border-color: #dddcd7;
+  border-style: solid;
+  background-color: transparent;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* прячем заголовки */
+.visually-hidden:not(:focus):not(active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
