@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.header {
+  padding-top: 36px;
+  padding-bottom: 32px;
+  background-color: white;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.logotip {
+  float: left;
+}
+
+.logotip-link {
+  float: left;
+  font-weight: 300;
+  font-size: 30px;
+  color: #555252;
+  letter-spacing: -0.6px;
+}
+
+.logotip-link::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+}
+
+.menu-list {
+  float: right;
+  margin-top: 7px;
+}
+
+.menu-list li {
+  float: left;
+}
+
+.menu-list-link {
+  font-family: "Open+Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #0f0101;
+  letter-spacing: -0.28px;
+}
+
+.menu-list-item:nth-child(1) {
+  margin-right: 32px;
+}
+.menu-list-item:nth-child(2) {
+  margin-right: 35px;
+}
+.menu-list-item:nth-child(3) {
+  margin-right: 28px;
+}
+.menu-list-item:nth-child(4) {
+  margin-right: 26px;
+}
+.menu-list-item:nth-child(5) {
+  margin-right: 30px;
+}
+
+.menu-list-link:hover {
+  color: rgb(26, 188, 156);
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+  padding-top: 209px;
+  padding-bottom: 270px;
+  background-image: linear-gradient(rgba(0, 0, 2, 0.522), rgba(0, 0, 2, 0.522)),
+    url("../img/img-5.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.slides-descr {
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: -1.2px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.slides-item {
+  float: left;
+}
+
+.slides-item-title {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -0.48px;
+}
+
+.slides-offers li:not(:last-child)::after {
+  display: inline-block;
+  content: "/";
+  color: #ffffff;
+  font-size: 24px;
+  padding-left: 1px;
+  padding-right: 4px;
+}
+
+.slides-item-title:hover {
+  background: rgb(26, 188, 156);
+  color: gray;
+}
+
+.slides-item-title,
+.slides-descr {
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.slides-offers {
+  position: absolute;
+  margin-left: 190px;
+  z-index: 1;
+}
+
+.slider-btns {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 60%);
+  width: 1110px;
+}
+
+.sleader-ctrl {
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 104px;
+  height: 104px;
+  background-color: rgb(26, 188, 156);
+}
+
+.sleader-ctrl:first-child {
+  background-image: url("../img/left.png");
+  float: left;
+}
+.sleader-ctrl:last-child {
+  background-image: url("../img/right.png");
+  float: right;
+}
+
+.inactive {
+  background-color: rgb(26, 188, 156);
+  opacity: 0.651;
+}
+
+/* NEW-COLLECTION */
+.new-collection {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #e9f0fd;
+}
+
+.new-collection-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #515151;
+  letter-spacing: -0.96px;
+  text-align: center;
+  margin-bottom: 82px;
+}
+
+.new-collection-title::after {
+  content: "";
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: rgb(26, 188, 156);
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.new-collection-list-wrapper {
+  position: relative;
+}
+
+.new-collection-list-item {
+  float: left;
+  position: relative;
+}
+
+.new-collection-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.new-collection-item-img {
+  width: 100%;
+  height: 283px;
+  object-fit: none;
+  object-position: 0 0;
+}
+
+.collection-name,
+.collection-price {
+  float: left;
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: -0.36px;
+  width: 201px;
+  height: 40px;
+  background-color: rgb(50, 50, 50);
+}
+
+.collection-name {
+  padding-top: 11px;
+  padding-left: 13px;
+}
+
+.collection-price {
+  width: 54px;
+  height: 40px;
+  text-align: center;
+  padding-top: 11px;
+  opacity: 0.439;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(323px - 40px);
+  border: 10px solid rgba(255, 255, 255, 0.549);
+  background-color: rgba(0, 0, 0, 0.549);
+  background-clip: padding-box;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.new-collection-list-item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.new-collection-list-item:hover .collection-name {
+  background-color: rgb(26, 188, 156);
+}
+
+.new-collection-list-item:hover .collection-price {
+  background-color: rgba(26, 188, 156, 0.439);
+}
+
+.social-list {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-list-item {
+  float: left;
+}
+
+.social-list-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-list-link:hover {
+  background-color: rgb(26, 188, 156);
+}
+
+.social-list-item:first-child .social-list-link {
+  background-image: url("../img/icons/icon-1.png");
+  margin-right: 7px;
+}
+
+.social-list-item:nth-child(2) .social-list-link {
+  background-image: url("../img/icons/icon-2.png");
+  margin-right: 7px;
+}
+
+.social-list-item:nth-child(3) .social-list-link {
+  background-image: url("../img/icons/icon-3.png");
+}
+
+.social-list-item:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.social-list-item:last-child .social-list-link {
+  width: 164px;
+  height: 50px;
+  background-color: rgb(50, 50, 50);
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: -0.28px;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  padding-right: 16px;
+}
+
+.shopping {
+  line-height: 50px;
+  background-image: url("../img/icons/icon-4.png");
+  background-position: left 10px center;
+}
+
+/* FOOTER*/
+.footer {
+  padding-top: 38px;
+  padding-bottom: 32px;
+  background-color: rgb(50, 50, 50);
+  text-transform: none;
+}
+
+.footer_description {
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: rgb(254, 254, 254);
+  text-align: center;
+}
+
+.coopired::after {
+  content: "\00A9";
+}
+
+ .company_link:hover {
+  color: rgb(26, 188, 156);
+ }
