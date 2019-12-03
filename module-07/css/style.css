@@ -1,0 +1,320 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-800 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+         url('../fonts/montserrat-v14-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* montserrat-900 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Montserrat Black"), local("Montserrat-Black"),
+    url("../fonts/montserrat-v14-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v10-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v10-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../fonts/NotoSerif-Italic.ttf") format("ttf");
+}
+
+/* Noto Serif-regular - italic latin 
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400i&display=swap");
+*/
+
+html {
+  font-size: 10px; /*62.5%;  62.5% of 16px = 10px */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+body {
+  line-height: 1.2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  padding-top: 4.4rem;
+  padding-bottom: 11.1rem;
+}
+.container {
+  width: 94rem;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 48rem;
+}
+
+.header_list-link {
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(34, 34, 34);
+}
+
+.header_list-link:hover {
+  color: #fed136;
+}
+
+/* SERVICES */
+.services {
+  padding-bottom: 10.2rem;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.1rem;
+  margin-bottom: 0.15rem;
+}
+
+.services_title {
+  /* line-height: 7.5rem;  */
+  color: rgb(34, 34, 34);
+}
+
+.main_subtitle {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #777777;
+  text-align: center;
+  margin-bottom: 7.6rem;
+}
+
+.services_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services_list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 29rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+
+.services_list-item::before {
+  display: block;
+  content: "";
+  width: 7.2rem;
+  height: 7.2rem;
+  border: 3px solid rgb(254, 209, 54);
+  border-radius: 50%;
+  background-image: url(../img/icons/Icon-Basket.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 2.2rem;
+}
+
+.services_list-item:nth-child(2)::before {
+  background-image: url(../img/icons/Icon-Laptop.png);
+}
+
+.services_list-item:last-child::before {
+  background-image: url(../img/icons/Icon-Locked.png);
+}
+
+.services_list-title {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.8rem;
+  letter-spacing: -0.045rem;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 1.46rem;
+}
+
+.services_list-text {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  letter-spacing: -0.035rem;
+  line-height: 1.7;
+  color: #777777;
+  text-align: center;
+  margin-bottom: 1.7rem;
+}
+
+/* CONTACT */
+.contact {
+  background: rgb(34, 34, 34);
+  background-image: url(../img/Map_Image.png);
+  background-position: top 117px right 0;
+  background-repeat: no-repeat;
+  background-size: 61.4rem;
+}
+
+.contact-container {
+  width: 94rem;
+  margin: 0 auto;
+  padding-top: 10.8rem;
+  padding-bottom: 11.5rem;
+}
+
+.contact_title {
+  color: rgb(255, 255, 255);
+}
+
+.contact_form {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  padding-left: 2rem;
+  width: 45.5rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.4rem;
+  letter-spacing: -0.035rem;
+  color: rgb(187, 187, 187);
+  text-transform: uppercase;
+}
+  
+.input {
+  height: 5.4rem;
+}
+
+.textarea {
+  resize: none;
+  padding-top: 1.6rem;
+  padding-bottom: 1.9rem;
+  padding-right: 1.9rem;
+  height: 21rem;
+}
+
+.required_field:focus {
+  outline: none;
+}
+
+.required_field:required:focus:valid {
+  border: 2px solid green;
+}
+
+.required_field:required:focus:invalid {
+  border: 2px solid red;
+}
+
+.contact-wrapper-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45.9rem;
+  height: 21rem;
+}
+
+.contact-wrapper-with-textarea {
+  display: flex;
+  justify-content: space-between;
+  width: 94rem;
+  height: 21rem;
+  margin-bottom: 2.9rem;
+}
+
+.wrapper-btn {
+  width: 94rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_form-btn {
+  width: 240px;
+  height: 66px;
+  border: 3px solid rgb(254, 209, 54);
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.8rem;
+  letter-spacing: -0.045rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact_form-btn:hover {
+  background-color: rgb(209, 168, 19);
+  border: 3px solid rgb(209, 168, 19);
+}
