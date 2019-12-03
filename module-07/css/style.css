@@ -247,7 +247,6 @@ img {
   font-style: normal;
   font-size: 1.4rem;
   letter-spacing: -0.035rem;
-  color: rgb(187, 187, 187);
   text-transform: uppercase;
 }
   
@@ -261,6 +260,10 @@ img {
   padding-bottom: 1.9rem;
   padding-right: 1.9rem;
   height: 21rem;
+}
+ 
+.contact_form::placeholder {
+  color: rgb(187, 187, 187);
 }
 
 .required_field:focus {
